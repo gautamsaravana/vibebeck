@@ -15,8 +15,8 @@ FROM eclipse-temurin:17-jdk-alpine
 
 WORKDIR /opt/app
 
-COPY --from=build /app/target/ExpressCinema-0.0.1-SNAPSHOT.jar app.jar
+COPY --from=build /app/target/*.war app.war
 
 EXPOSE 2025
 
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java","-jar","app.war"]
