@@ -61,7 +61,7 @@
 <dependency>
     <groupId>com.mysql</groupId>
     <artifactId>mysql-connector-j</artifactId>
-    <version>8.0.33</version>   <!-- 🔥 added version fixes the error -->
+    <version>8.0.33</version>   <!--  added version fixes the error -->
     <scope>runtime</scope>
 </dependency>
 
